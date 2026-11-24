@@ -1,9 +1,4 @@
-<div align="center">
-
-<img src="https://kazi-mushfiq-ehsan.netlify.app/og-image.png" alt="Kazi Mushfiq Ehsan — Front-End Developer Portfolio" width="100%" />
-
-<br />
-<br />
+<div align="center"> <img src="./og-image.png" alt="Kazi Mushfiq Ehsan — Front-End Developer Portfolio" width="100%" /> <br /> <br />
 
 # Kazi Mushfiq Ehsan
 

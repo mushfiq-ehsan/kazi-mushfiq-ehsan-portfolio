@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | Kazi Mushfiq Ehsan</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e14; --panel:#10151c; --border:#1e2730; --text:#c9d3de; --text-dim:#6b7688;
+    --accent-cyan:#7ee6c4; --accent-pink:#ff7ab6; --font-mono:'JetBrains Mono',monospace; --font-sans:'Inter',sans-serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background:var(--bg); color:var(--text); font-family:var(--font-sans);
+    min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  body::before{
+    content:''; position:fixed; inset:0;
+    background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size:48px 48px; opacity:0.15; pointer-events:none;
+  }
+  .card{
+    position:relative; z-index:1; max-width:560px; width:100%;
+    background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:44px 36px;
+  }
+  .terminal-header{ display:flex; gap:8px; margin-bottom:24px; }
+  .dot{ width:11px; height:11px; border-radius:50%; }
+  .dot.r{ background:#ff5f56; } .dot.y{ background:#ffbd2e; } .dot.g{ background:#27c93f; }
+  .code{ font-family:var(--font-mono); font-size:14px; line-height:1.9; white-space:pre-wrap; }
+  .code .err{ color:var(--accent-pink); }
+  .code .fn{ color:#79b8ff; }
+  .code .str{ color:#e6c07b; }
+  .code .com{ color:var(--text-dim); font-style:italic; }
+  .big404{
+    font-family:var(--font-mono); font-size:64px; font-weight:700; color:var(--accent-cyan);
+    margin:22px 0 8px; letter-spacing:-2px;
+  }
+  .msg{ color:var(--text-dim); font-size:15px; line-height:1.7; margin-bottom:28px; }
+  .actions{ display:flex; gap:12px; flex-wrap:wrap; }
+  .btn{
+    font-family:var(--font-mono); font-size:14px; padding:12px 22px; border-radius:7px;
+    text-decoration:none; border:1px solid var(--border); color:var(--text); transition:all .2s ease;
+  }
+  .btn.primary{ background:var(--accent-cyan); color:#08110d; font-weight:600; border-color:var(--accent-cyan); }
+  .btn:hover{ border-color:var(--accent-cyan); color:var(--accent-cyan); transform:translateY(-2px); }
+  .btn.primary:hover{ color:#08110d; box-shadow:0 0 20px rgba(126,230,196,.35); }
+  .cursor{ display:inline-block; width:8px; height:1em; background:var(--accent-cyan); vertical-align:text-bottom; animation:blink 1s steps(1) infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="terminal-header">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    </div>
+    <div class="code"><span class="com">// route resolution failed</span>
+<span class="fn">console</span>.<span class="err">error</span>(<span class="str">"Cannot GET this route"</span>)<span class="cursor"></span></div>
+    <div class="big404">404</div>
+    <p class="msg">This page doesn't exist — maybe it moved, maybe it was never built, or maybe the URL just has a typo in it.</p>
+    <div class="actions">
+      <a class="btn primary" href="/">← Back to home</a>
+      <a class="btn" href="/projects">View projects</a>
+      <a class="btn" href="/contact">Contact me</a>
+    </div>
+  </div>
+</body>
+</html>
